@@ -13,6 +13,7 @@ allfiles = os.listdir(source)
 
 # iterate on all files to move them to destination folder
 for f in allfiles:
+	# only move txt files
 	if '.txt' in f:
 		src_path = os.path.join(source, f)
 		dst_path = os.path.join(destination, f)
