@@ -14,8 +14,22 @@ def getValuesFromUser():
 
 def caluculateValues(x, y):
     
-    print("'*' Multiply\n '' Divide \n'-' Subtract\n'+' Add\n")
+    print("'*' Multiply\n '/' Divide \n'-' Subtract\n'-' Add\n")
+    operator = input("Enter choice: ")
     
+    calculateBattery = True
+    
+    while(calculateBattery):
+        if(operator == '+'):
+            return x+y
+        elif(operator == '-'):
+            return x-y
+        elif(operator == '/'):
+            return x/y
+        elif(operator == '*'):
+            return x*y
+        else:
+            print("not a valid operator")    
     pass
             
 def main():
@@ -30,7 +44,7 @@ def main():
     print(f'\nNumber A: {valueA}\nNumber B: {valueB}')
     
     # calculate values
-    caluculateValues(valueA, valueB)
+    print("Answer", caluculateValues(valueA, valueB))
 
     print("---- END PROGRAM ----")
 
