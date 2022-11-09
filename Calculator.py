@@ -11,18 +11,27 @@ def getValuesFromUser():
         except:
             print("number entered was not a number, try again\n\n")
     return number
-            
-def main():
-    print('Calculator Booting up! ~~~~~\n\n')
+
+def caluculateValues(x, y):
     
-    # get values from user
-    valueA = getValuesFromUser()
-    valueB = getValuesFromUser()
-    
-    print(f'Number A: {valueA}\nNumber B: {valueB}')
-    
-    # calculate values
+    print("'*' Multiply\n '' Divide \n'-' Subtract\n'+' Add\n")
     
     pass
+            
+def main():
+    print('Calculator Booting up! ~~~~~\n')
+    
+    # get values from user
+    print('Enter 1st value')
+    valueA = getValuesFromUser()
+    print('Enter 2nd value')
+    valueB = getValuesFromUser()
+    
+    print(f'\nNumber A: {valueA}\nNumber B: {valueB}')
+    
+    # calculate values
+    caluculateValues(valueA, valueB)
+
+    print("---- END PROGRAM ----")
 
 main()
