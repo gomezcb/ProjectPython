@@ -3,7 +3,9 @@ import os, shutil
 # return the current workiing directory
 dir_path = os.path.dirname(os.path.realpath(__file__))
 
-folder = '/Users/carlosgomez/Desktop/DeleteFiles/Test_Folder'
+username = os.getlogin()
+
+folder = f'/Users/{username}/Desktop/DeleteFiles/Test_Folder'
 for filename in os.listdir(folder):
     file_path = os.path.join(folder, filename)
     try:
