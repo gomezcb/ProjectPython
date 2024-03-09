@@ -1,14 +1,14 @@
 ## programmerL Carlos
 
 def getValuesFromUser():
-    gameOn = True
+    calulatorOn = True
     
     # check if value are valid
-    while(gameOn):
+    while(calulatorOn):
         valueA = input('Enter a number: ')
         try:
             number = float(valueA)
-            gameOn = False
+            calulatorOn = False
         except:
             print("number entered was not a number, try again\n\n")
     return number
