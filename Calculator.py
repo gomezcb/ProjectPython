@@ -18,9 +18,9 @@ def caluculateValues(x, y):
     print("'*' Multiply\n '/' Divide \n'-' Subtract\n'-' Add\n")
     operator = input("Enter choice: ")
     
-    calculateBattery = True
+    calculateValues = True
     
-    while(calculateBattery):
+    while(calculateValues):
         if(operator == '+'):
             return x+y
         elif(operator == '-'):
